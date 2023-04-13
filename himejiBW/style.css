@@ -1,0 +1,84 @@
+.bg_line2 {
+    background-image: linear-gradient( -45deg,  /* 斜線の角度 */
+      #f3f3f3 25%,  /*グレー*/
+      #fff    25%,  /*白*/
+      #fff    50%,  /*白*/
+      #f3f3f3 50%,  /*グレー*/
+      #f3f3f3 75%,  /*グレー*/
+      #fff    75%,  /*白*/
+      #fff          /*白*/
+    );
+    background-size: 40px 40px;   /* 1タイルのサイズ */
+}
+
+ul{
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 62%;
+    text-align: center;
+}
+ul li{
+    display: table-cell;
+    min-width: 50px;
+}
+ul li a{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+ul li.current{
+    background-color: #DEEBF7;
+}
+ul li.current a{
+    color: #555;
+}
+ul li:hover{
+    background-color: #FFF2CC;
+}
+
+.logo{
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+}
+.box{
+    margin-top: 0;
+    padding: 1em 1.5em;
+    background: #fff2e4;/*背景色*/
+    color: #000000;/*文字色*/
+}
+.box_title { 
+    padding: 0.5em 0.5em 0.4em;
+    text-align: center;
+    font-size: 1.3em;/*タイトル文字サイズ*/
+    background: #ff9b38;/*タイトル文字背景色*/
+    border-bottom: 3px solid #ff7f00;/*タイトル下線*/
+    color: #ffffff;/*タイトル文字色*/
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #376DE4;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: #8DAAE9;
+}
+.btn:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
